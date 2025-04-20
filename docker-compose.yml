@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  pvz:
+    build: .
+    container_name: pvz-backend
+    ports:
+      - "8080:8080"
+    restart: always  # авто-перезапуск
