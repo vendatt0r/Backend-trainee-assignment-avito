@@ -3,7 +3,7 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from typing import Literal
 
 # Типы пользователей
-UserRole = Literal["client", "moderator"]
+UserRole = Literal["client", "moderator", "employee_pvz"]
 
 # Используем стандартный Bearer
 security = HTTPBearer()

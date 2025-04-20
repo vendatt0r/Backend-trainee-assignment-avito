@@ -7,7 +7,7 @@ import db
 router = APIRouter()
 
 # Типы пользователей
-UserRole = Literal["client", "moderator"]
+UserRole = Literal["client", "moderator", "employee_pvz"]
 
 # In-memory хранилище токенов (можно заменить на Redis)
 token_store = {}

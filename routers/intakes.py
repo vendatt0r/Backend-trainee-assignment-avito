@@ -9,9 +9,9 @@ router = APIRouter(prefix="/intakes", tags=["Intakes"])
 class IntakeCreate(BaseModel):
     pickup_point_id: int
 
-@router.post("/", dependencies=[Depends(require_role("moderator"))])
+@router.post("/", dependencies=[Depends(require_role("employee_pvz"))])
 async def add_intake(data: IntakeCreate):
     return await create_intake(data.pickup_point_id)
-@router.post("/{intake_id}/close", dependencies=[Depends(require_role("moderator"))])
+@router.post("/{intake_id}/close", dependencies=[Depends(require_role("employee_pvz"))])
 async def close_intake_endpoint(intake_id: int):
     return await close_intake(intake_id)
