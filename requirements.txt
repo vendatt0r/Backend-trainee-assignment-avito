@@ -1,6 +1,7 @@
-asyncpg~=0.30.0
-fastapi~=0.115.12
-pydantic~=2.11.3
-starlette~=0.46.2
-pytest~=8.3.5
-httpx~=0.28.1
+asyncpg
+fastapi
+pydantic
+starlette
+pytest
+httpx
+uvicorn
