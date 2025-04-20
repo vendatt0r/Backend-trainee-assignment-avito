@@ -5,3 +5,5 @@ starlette
 pytest
 httpx
 uvicorn
+pydantic[email]
+
