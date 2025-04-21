@@ -38,3 +38,9 @@ Swagger с описанием всех эндпоинтов и требован�
 ```bash
 pytest test_intake_flow.py
 ```
+
+### Запуск unit-тестов
+
+```bash
+pytest --cov=services --cov=routers tests/
+```
